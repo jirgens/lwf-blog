@@ -1,0 +1,80 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#content {
+  max-width: 100%;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+
+#blog-column {
+  max-width: 22%;
+  margin: 17px;
+  img {
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+
+#wedding-column {
+  max-width: 47%;
+  margin: 17px;
+  border-style: double;
+  border-color: #bda6fe;
+  background-color: #EAE5F5;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+#front-gallery {
+  background-color: white;
+  margin: 5px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-bottom: 17px;
+  a:link {
+    color: #813c8e;
+  }
+  a:visited {
+    color: #813c8e;
+  }
+  a:hover {
+    color: red;
+  }
+  a:active {
+    color: blue;
+  }
+}
+
+#terr-column {
+  max-width: 22%;
+  margin: 17px;
+  img {
+    margin: 8px;
+    max-width: 175px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+  }
+}
+
+#pagehead {
+  display: inline-block;
+}
+
+#contact {
+  text-align: center;
+  color: #813c8e;
+  font-family: 'Quicksand', sans-serif;
+}
+
+// portfolio page
+
+#portfolio {
+  max-height: 87%;
+}
+
+#thumbs {
+  display: inline-block;
+  text-align: center;
+}

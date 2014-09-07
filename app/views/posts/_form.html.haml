@@ -1,0 +1,17 @@
+%section#mypicks_form
+  .form-horizontal
+    = bootstrap_form_for(@post, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10", :html => {:multipart => true}) do |f|
+      %div.form-group
+        %label.col-sm-2.control-label{:for => "title"} Title
+        .col-sm-10
+          %textarea#blogtitle.form-control{:name => "Title", :placeholder => "Write a catchy title here!"}
+        %br/
+      %div.form-group
+        %label.col-sm-2.control-label{:for => "body"} Post
+        .col-sm-10
+          %textarea#blogbody.form-control{:name => "body", :placeholder => "Write your post here!", :rows => "5"}
+        %br/
+      %fieldset.actions.form-group
+      .col-sm-6.col-md-offset-3
+        = f.submit(@post.new_record? ? "Post Your Pick" : "Edit Your Pick", class: 'btn btn-success')
+      %br/
